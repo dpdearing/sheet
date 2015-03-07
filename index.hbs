@@ -5,10 +5,12 @@
 		<main role="main">
 
 			{{#foreach posts}}
-				<a class="sheet-post {{post_class}}" href='{{url}}'>
+				<div class="sheet-post {{post_class}}">
 					<article class="sheet-panel">
 						<header>
+							<a class="sheet-post" href='{{url}}'>
 							<h2 class="sheet-title sheet-post-title">{{{title}}}</h2>
+							</a>
 							<div class="sheet-post-meta">
 								<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
 								{{#if tags}}
@@ -18,11 +20,10 @@
 						</header>
 
 						<section>
-							<p class="sheet-post-excerpt">{{excerpt}}&hellip;</p>
-							<div class="sheet-read-more">READ MORE <i class="fa fa-caret-right"></i></div>
+							<p class="sheet-post-excerpt">{{content preview="true"}}</p>
 						</section>
 					</article>
-				</a>
+				</div>
 			{{/foreach}}
 
 			<div class="sheet-panel">

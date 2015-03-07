@@ -232,7 +232,7 @@ blockquote {
 
 .sheet-panel {
 	background-color: #fff;
-	padding: 20px;
+	padding: 10px;
 	box-shadow: 1px 1px 1px rgba(174,174,174,0.5);
 	margin-bottom: 20px;
 }
@@ -374,6 +374,10 @@ a.sheet-post:hover, a.sheet-post:hover .sheet-post-title {
 }
 
 /* post footer */
+
+img.sheet-author-image {
+	height: 60px;
+}
 
 .sheet-author-image {
 	display: block;
