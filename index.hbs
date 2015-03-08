@@ -14,13 +14,13 @@
 							<div class="sheet-post-meta">
 								<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
 								{{#if tags}}
-									<i class="fa fa-tags sheet-post-tags"></i> {{tags autolink="false"}}
+									<i class="fa fa-tags sheet-post-tags"></i> {{tags autolink="true"}}
 								{{/if}}
 							</div>
 						</header>
 
 						<section>
-							<p class="sheet-post-excerpt">{{content preview=(url)}}</p>
+							<p class="sheet-post-excerpt">{{content previewOf=(url) previewText='&hellip; CONTINUE READING'}}</p>
 						</section>
 					</article>
 				</div>
@@ -41,6 +41,12 @@
 				<p class="sheet-sidebar-desc">{{@blog.description}}</p>
 			{{/if}}
 			<div class="sheet-sidebar-subscribe"><a class="sheet-btn" href="{{@blog.url}}/rss/"><i class="fa fa-rss-square"></i> <span>Subscribe</span></a></div>
+		</div>
+		<div class="sheet-panel sheet-sidebar facebook-narrow">
+			<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FSeattle-Homebrew%2F120123541404672&amp;width=176&amp;height=258&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;show_border=false&amp;header=false&amp;appId=130184397082662" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:176px; height:261px;" allowTransparency="true"></iframe>
+		</div>
+		<div class="sheet-panel sheet-sidebar facebook-wide">
+			<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FSeattle-Homebrew%2F120123541404672&amp;width=335&amp;height=258&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;show_border=false&amp;header=false&amp;appId=130184397082662" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:335px; height:261px;" allowTransparency="true"></iframe>
 		</div>
 	</div>
 </div>
