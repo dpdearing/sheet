@@ -247,7 +247,7 @@ blockquote {
 
 .sheet-title * {
 	font-family: "Helvetica Neue", "Open Sans", sans-serif;
-	font-weight: 100;
+	font-weight: 200;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -274,7 +274,7 @@ blockquote {
 
 /* post listing */
 
-a.sheet-post .sheet-post-title {
+.sheet-post .sheet-post-title a {
 	color: #000;
 	transition: 0.3s all;
 }
@@ -293,17 +293,8 @@ a.sheet-post:link, .sheet-post:visited {
 	text-decoration: none;
 }
 
-a.sheet-post:hover, .sheet-post:hover .sheet-post-title {
+.sheet-post-title:hover a {
 	color: #0084FF;
-}
-
-.sheet-read-more {
-	font-size: 14px;
-	font-variant: small-caps;
-	display: block;
-	text-align: right;
-	margin-top: 25px;
-	margin-right: 15px;
 }
 
 /* sidebar */
@@ -494,3 +485,25 @@ img.sheet-author-image {
 		text-align: right;
 	}
 }
+
+/* read more footer */
+.sheet-post footer {
+	text-align: right;
+}
+
+.read-more {
+	font-size: 14px;
+	font-variant: small-caps;
+	text-align: right;
+	margin-top: 25px;
+	margin-right: 15px;
+}
+
+.read-more:link, .read-more:visited a {
+	text-decoration: none;
+}
+
+a.read-more:hover {
+	color: #0084FF;
+}
+
