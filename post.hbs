@@ -18,18 +18,18 @@
 			</article>
 		</main>
 
-		<footer class="pure-u-3-4">
-			<div class="sheet-panel">
+		<div class="pure-u-1-4">
+			<div class="sheet-panel sheet-sidebar">
 				<div class="pure-g-r">
-					<div class="pure-u-1-4">
+					<div class="pure-u-1-4 sheet-author">
 						{{#if author.image}}
 							<img class="sheet-author-image" src="{{author.image}}" alt="{{author.name}}" />
 						{{/if}}
+							<h2 class="sheet-author-name">{{author.name}}</h2>
 					</div>
 
 					<div class="pure-u-3-4">
 						<div class="sheet-author-blurb">
-							<h2 class="sheet-author-name">{{author.name}}</h2>
 							<p class="sheet-author-bio">{{author.bio}}</p>
 							<p class="sheet-author-bio-sub">
 								{{#if author.location}}
@@ -52,6 +52,6 @@
 					</div>
 				</div>
 			</div>
-		</footer>
+		</div>
 	</div>
 {{/post}}

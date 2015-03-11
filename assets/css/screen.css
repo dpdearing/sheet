@@ -385,6 +385,10 @@ a.sheet-post:link, .sheet-post:visited {
 
 /* post footer */
 
+.sheet-author {
+	text-align: center;
+}
+
 img.sheet-author-image {
 	height: 60px;
 }
@@ -395,8 +399,6 @@ img.sheet-author-image {
 }
 
 .sheet-author-blurb {
-/*	padding-left: 10px;
-*/
 	margin-top: 0px;
 	text-align: center;
 }
@@ -408,6 +410,7 @@ img.sheet-author-image {
 }
 
 .sheet-author-name {
+	display: inline;
 	margin-top: 10px;
 	margin-bottom: 0px;
 }
